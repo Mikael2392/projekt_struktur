@@ -22,7 +22,12 @@ class ProfileScreen extends StatelessWidget {
             style: TextStyle(fontSize: 24),
           ),
           SizedBox(height: 16),
-          UserInfo(),
+          UserInfo(
+            name: 'Erika Mustermann',
+            age: 32,
+            street: 'Adalbertstraße 5',
+            city: 'Berlin',
+          ),
         ],
       ),
     );

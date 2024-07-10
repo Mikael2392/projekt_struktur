@@ -1,30 +1,41 @@
 import 'package:flutter/material.dart';
 
 class UserInfo extends StatelessWidget {
-  const UserInfo({super.key});
+  final String name;
+  final int age;
+  final String street;
+  final String city;
+
+  const UserInfo({
+    super.key,
+    required this.name,
+    required this.age,
+    required this.street,
+    required this.city,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         Text(
-          "Erika Mustermann",
-          style: TextStyle(fontSize: 20),
+          name,
+          style: const TextStyle(fontSize: 20),
         ),
-        SizedBox(height: 16),
+        const SizedBox(height: 16),
         Text(
-          "32 Jahre",
-          style: TextStyle(fontSize: 20),
+          '$age Jahre',
+          style: const TextStyle(fontSize: 20),
         ),
-        SizedBox(height: 16),
+        const SizedBox(height: 16),
         Text(
-          "Adalbertstraße 5",
-          style: TextStyle(fontSize: 20),
+          street,
+          style: const TextStyle(fontSize: 20),
         ),
-        SizedBox(height: 16),
+        const SizedBox(height: 16),
         Text(
-          "Berlin",
-          style: TextStyle(fontSize: 20),
+          city,
+          style: const TextStyle(fontSize: 20),
         ),
       ],
     );
