@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projekt_struktur/src/features/features%201/todo_item.dart';
+import 'package:projekt_struktur/src/features/todos/todo_item.dart';
 
 class TodosScreen extends StatelessWidget {
   const TodosScreen({super.key});
